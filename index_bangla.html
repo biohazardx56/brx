@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>বাংলা রেডিও</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" media="all" href="static/main.css">
+    <link rel="stylesheet" href="vendors/jquery.mobile/jquery_f.css"/>
+    <script src="vendors/jquery.mobile/jquery-1.7.1.min.js"></script>
+    <script src="vendors/jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+	<script src="vendors/jquery.min.js"></script>
+	<script src="station_fetch.js"></script>>
+	<script>
+	
+	</script>
+
+	<!--style>
+	.ui-page { 
+		background: center fixed; 
+	}
+	</style-->
+	
+    </head>
+
+
+<body>
+
+<div data-role="page" data-theme="a"><!-- page -->
+	<div data-role="header"  data-position="fixed" data-theme='a'><!-- header -->
+        <h1>
+        	<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">বাংলা রেডিও
+					</span>
+				</span>
+			</span>
+        </h1>
+    </div>
+
+
+
+	<div data-role="collapsible" data-iconpos='right' data-corners=False>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">রেডিও তুফান
+					</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://107.178.110.114:7600/;" preload="none"></audio>
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playtufan()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+		
+	
+	</div>
+	
+	
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">রেডিও গুনগুন</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://184.107.144.218:8040/;" preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playgungun()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">লেমন২৪</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://office.mcc.com.bd:8000/;" preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playlemon()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">রেডিও স্বদেশ</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://radioswadesh.com:8002/;" preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playsodes()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">একতারা রেডিও</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://50.7.98.106:8520/;" preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playektara()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">রেডিও তোলপাড়</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://neon.wavestreamer.com:6129/;" preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playtolpar()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">রেডিও হৈচৈ</span>
+				</span>
+			</span>	
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://66.85.136.195:7019/;" preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playhoicoi()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+	
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">অনিয়ম</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://98.238.36.218:8000/;"	preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playoniom()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+	
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">এবিসি রেডিও</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://live.abcradiobd.fm:8282/;"  preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playabc()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+	
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">রেডিও টুডে</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://220.247.162.146:7170/;"  preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playtoday()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+	
+	
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">ঢাকা এফএম</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://118.179.219.244:8000/;"  preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playdhaka()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+
+
+
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">রেডিও স্বাধীন</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://184.107.144.218:8240/;"  preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playsadhin()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+	
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">রেডিও ময়নামতি</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://66.85.136.195:7011/;" preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playmoyna()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+	
+	<div data-role="collapsible" data-iconpos='right'>
+		<h1>
+			<span style="font-family: SolaimanLipi;">
+				<span lang="hi-IN">
+					<span style="font-size: large;">রেডিও সঙ্গী</span>
+				</span>
+			</span>
+		</h1>
+		<audio id="myMediaElementID" mozaudiochannel="content" src="http://66.85.136.195:7031/;" preload="none"></audio>
+		
+		<fieldset class="ui-grid-a">
+	<div class="ui-block-a"><button onclick="playsongi()" data-theme='e'>Play</button></div>
+	<div class="ui-block-b"><button onclick="stop()">Stop</button></div>	   
+</fieldset>
+	</div>
+
+	
+	
+
+</div>
+
+</body>
+</html>
