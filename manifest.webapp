@@ -1,0 +1,25 @@
+{
+  "name": "Bangla Radio",
+  "version": "1.01",
+  "description": "Listen online various online Bangla Radio",
+  "launch_path": "/index.html",
+  "permissions": {
+    "storage": {
+      "description": "No storage usage"
+    }
+  },
+  "developer": {
+    "name": "Ruhshan Ahmed & Zishan Ahmed",
+    "url": "http://about.me/ruhshan"
+  },
+  "permissions": {
+    "audio-channel-content": { 
+      "description": "play audio in the background"
+    }
+  },
+  "icons": {
+    "60": "/ico60.png",
+    "128": "/ico128.png"
+  }
+   
+}

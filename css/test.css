@@ -1,0 +1,23 @@
+#testy ul li .ui-btn-inner {
+  background-color:transparent; !important;
+}
+
+#testy.ui-collapsible-heading .ui-btn {
+  background:transparent !important;
+  border:none !important;
+  border-color:black;
+  box-shadow:none !important;
+  text-shadow:none;
+  text-align:center;
+  color:black;
+}
+
+.ui-collapsible-heading .ui-btn {
+  background:transparent !important;
+  border:none ;
+  border-color:green;
+  box-shadow:0 -3px 1px #333 !important;
+  text-shadow:0 -.1px .1px #305;
+  text-align:left;
+  color:black;
+}
